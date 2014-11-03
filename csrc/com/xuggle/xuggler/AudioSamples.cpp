@@ -28,6 +28,12 @@
 
 VS_LOG_SETUP(VS_CPP_PACKAGE);
 
+// See APIchanges
+//2011-12-02 - e4de716 / 0eea212 - lavc 53.40.0 / 53.25.0
+//  Deprecate AVCODEC_MAX_AUDIO_FRAME_SIZE.
+// @dstieglitz redefined here for backward compatibility
+#define AVCODEC_MAX_AUDIO_FRAME_SIZE 19200
+
 namespace com { namespace xuggle { namespace xuggler
 {
   using namespace com::xuggle::ferry;
